@@ -7,6 +7,7 @@ Formo::getnote ();
  
      
 <style>
+      
 p.date   {
     text-align: justify;
     direction: rtl;
@@ -34,15 +35,17 @@ p{
     font-weight: bold;
     font-style: normal;
     border-radius: 25px;
-padding: 12px;
+    padding: 12px;
     margin: 12px;
 }
     
     
-    div.comments {
+div.comments {
     text-align: center;
     font-size: large;
     font-weight: bold;
     color: #0a88ec;
-}     
+}  
+      
+      
 </style>
