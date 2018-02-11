@@ -1,51 +1,16 @@
-      
-<?php
-session_start();
-require_once 'Controller.php';
-Formo::getnote ();
-?>
- 
-     
-<style>
-      
-p.date   {
-    text-align: justify;
-    direction: rtl;
-    font-size: x-large;
-    line-height: 1.5;
-    padding: 12px;
-    margin: 3px;
-    background: wheat;
-    border-radius: 25px;
-}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-div.row{
-    direction: rtl;
-    font-size: larger;
-    padding: 12px;
-    margin: 23px;
-    text-align: justify;
-    background: rgba(8, 8, 8, 0.14);
-    border-radius: 12px;
-}
+<title>remove-text-formation</title>
+<textarea id="txt"  ></textarea>
+<br>
+<button onclick="replaceAccents()">نفذ</button>
+<hr>
 
-p{
-    background: rgb(236, 234, 234);
-    font-size: x-large;
-    font-weight: bold;
-    font-style: normal;
-    border-radius: 25px;
-    padding: 12px;
-    margin: 12px;
-}
-    
-    
-div.comments {
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-    color: #0a88ec;
-}  
-      
-      
-</style>
+<script>
+function replaceAccents()
+{
+    var elem;
+    var text = (elem = document.getElementById("txt")).value;
+    elem.value = text.replace(new RegExp(String.fromCharCode(1617, 124, 1614, 124, 1611, 124, 1615, 124, 1612, 124, 1616, 124, 1613, 124, 1618), "g"), "");
+}    
+</script>
